@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Costero</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f5f5f5;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.produtos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.produto{
+    background:white;
+    width:250px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#111;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Costero</h1>
+    <p>Seu estilo, sua escolha.</p>
+</header>
+
+<section class="produtos">
+
+<div class="produto">
+    <h3>Camiseta Premium</h3>
+    <p>R$ 79,90</p>
+    <button onclick="comprar('Camiseta Premium')">
+        Comprar
+    </button>
+</div>
+
+<div class="produto">
+    <h3>Moletom Costero</h3>
+    <p>R$ 149,90</p>
+    <button onclick="comprar('Moletom Costero')">
+        Comprar
+    </button>
+</div>
+
+<div class="produto">
+    <h3>Tênis Casual</h3>
+    <p>R$ 199,90</p>
+    <button onclick="comprar('Tênis Casual')">
+        Comprar
+    </button>
+</div>
+
+</section>
+
+<script>
+function comprar(produto){
+    alert(produto + " adicionado ao carrinho!");
+}
+</script>
+
+</body>
+</html>
